@@ -4,6 +4,8 @@
 
 Set of configs and scripts intended for use in provisioning TEST and DEVELOPMENT servers for Hyrax or Hyku, eg. for use with Vagrant. These are NOT production-ready scripts.
 
+The scripts are written for use with Centos 7.
+
 The scripts rely on ENV variables and config files located in /tmp/config/ as follows:
 
 provision_apache.sh
