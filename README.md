@@ -9,7 +9,7 @@ The scripts rely on ENV variables and config files located in /tmp/config/ as fo
 provision_apache.sh
 
 ```
-$APP
+$APP # eg. hyrax
 /tmp/config/$APP.conf
 ```
 
@@ -25,7 +25,7 @@ provision_prereq.sh
 
 ```
 $FITS_VERSION
-/tmp/fits-$FITS.zip
+/tmp/fits-$FITS_VERSION.zip
 ```
 
 provision_solr.sh
@@ -33,35 +33,35 @@ provision_solr.sh
 ```
 $SOLR_VERSION
 $SOLR_USER
-$APP
+$APP # eg. hyrax
 /tmp/config/security.json
 ```
 
 provision_user.sh
 
 ```
-$APPUSER
-$APP
+$APPUSER # eg. hyrax
+$APP # eg. hyrax
 ```
 
 puma.sh
 
 ```
-$APP
+$APP # eg. hyrax
 /tmp/config/"$APP"_puma.service
 ```
 
 sidekiq.sh
 
 ```
-$APP
+$APP # eg. hyrax
 /tmp/config/"$APP"_puma.service
 ```
 
 tmpfiles.sh
 
 ```
-$APP
+$APP # eg. hyrax
 /tmp/config/"$APP"_run.conf
 ```
 
@@ -69,7 +69,7 @@ rbenv.sh
 
 ```
 $RBENV_RUBY_VERSION
-$RBENV_RAILS_VERSION
-$APPUSER
+$RBENV_RAILS_VERSION 
+$APPUSER # eg. hyrax
 ```
 
