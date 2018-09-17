@@ -25,7 +25,7 @@ then
 else
     echo 'solr is already downloaded'
 fi
-rm /tmp/solr-$SOLR.tgz
+/tmp/solr-$SOLR.tgz
 mv /tmp/solr-$SOLR /var/lib/solr
 
 # Use -force when running as root

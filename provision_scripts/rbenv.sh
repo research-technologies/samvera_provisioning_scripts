@@ -40,7 +40,7 @@ source $HOMEPATH/.bash_profile
 ################
 
 echo 'Installing ruby '$RUBY
-rbenv install $RUBY
+N | rbenv install $RUBY
 rbenv global $RUBY
 
 #################

@@ -52,6 +52,7 @@ if [ ! -d fits ]
 then
   echo 'Downloading Fits '$FITS
   # because of problems with the download, we use a local copy of fits
+  wget https://s3-eu-west-1.amazonaws.com/dart-development-public/sources/fits-$FITS.zip
   # wget http://projects.iq.harvard.edu/files/fits/files/fits-$FITS.zip
   mv /tmp/fits-$FITS.zip /usr/local/
   unzip fits-$FITS.zip
