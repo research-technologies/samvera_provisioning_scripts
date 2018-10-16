@@ -2,7 +2,7 @@
 
 SOLR=$(echo $SOLR_VERSION)
 USER=$(echo $SOLR_USER)
-COLLECTION=$(echo $APP)
+COLLECTION=$(echo $APPLICATION_KEY)
 
 ##################
 # Add user/group #

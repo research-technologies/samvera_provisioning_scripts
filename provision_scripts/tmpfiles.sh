@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILENAME=$(echo $APP)
+FILENAME=$(echo $APPLICATION_KEY)
 
 ################################
 # Create /var/run/hyku on boot #

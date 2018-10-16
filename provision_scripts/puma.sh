@@ -2,7 +2,7 @@
 
 # TODO https://github.com/seuros/capistrano-puma
 
-FILENAME=$(echo $APP)
+FILENAME=$(echo $APPLICATION_KEY)
 
 ####################################
 # Add puma as a systemd service #

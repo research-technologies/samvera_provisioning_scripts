@@ -2,7 +2,7 @@
 
 RUBY=$(echo $RBENV_RUBY_VERSION)
 RAILS=$(echo $RBENV_RAILS_VERSION)
-USER=$(echo $APPUSER)
+USER=$(echo $APPLICATION_USER)
 
 ################################################
 # Install rbenv https://github.com/rbenv/rbenv #

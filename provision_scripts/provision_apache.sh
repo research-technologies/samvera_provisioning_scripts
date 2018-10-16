@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILENAME=$(echo $APP)
+FILENAME=$(echo $APPLICATION_KEY)
 
 ##############################
 # Install Apache and mod_ssl #

@@ -11,8 +11,8 @@ The scripts rely on ENV variables and config files located in /tmp/config/ as fo
 provision_apache.sh
 
 ```
-$APP # eg. hyrax
-/tmp/config/$APP.conf
+$APPLICATION_KEY # eg. hyrax
+/tmp/config/$APPLICATION_KEY.conf
 ```
 
 provision_fcrepo.sh
@@ -35,36 +35,36 @@ provision_solr.sh
 ```
 $SOLR_VERSION
 $SOLR_USER
-$APP # eg. hyrax
+$APPLICATION_KEY # eg. hyrax
 /tmp/config/security.json
 ```
 
 provision_user.sh
 
 ```
-$APPUSER # eg. hyrax
-$APP # eg. hyrax
+$APPLICATION_USER # eg. hyrax
+$APPLICATION_KEY # eg. hyrax
 ```
 
 puma.sh
 
 ```
-$APP # eg. hyrax
-/tmp/config/"$APP"_puma.service
+$APPLICATION_KEY # eg. hyrax
+/tmp/config/"$APPLICATION_KEY"_puma.service
 ```
 
 sidekiq.sh
 
 ```
-$APP # eg. hyrax
-/tmp/config/"$APP"_puma.service
+$APPLICATION_KEY # eg. hyrax
+/tmp/config/"$APPLICATION_KEY"_puma.service
 ```
 
 tmpfiles.sh
 
 ```
-$APP # eg. hyrax
-/tmp/config/"$APP"_run.conf
+$APPLICATION_KEY # eg. hyrax
+/tmp/config/"$APPLICATION_KEY"_run.conf
 ```
 
 rbenv.sh
@@ -72,6 +72,6 @@ rbenv.sh
 ```
 $RBENV_RUBY_VERSION
 $RBENV_RAILS_VERSION 
-$APPUSER # eg. hyrax
+$APPLICATION_USER # eg. hyrax
 ```
 

@@ -2,7 +2,7 @@
 
 # TODO https://github.com/seuros/capistrano-sidekiq
 
-FILENAME=$(echo $APP)
+FILENAME=$(echo $APPLICATION_KEY)
 
 ####################################
 # Add sidekiq as a systemd service #
