@@ -1,0 +1,27 @@
+# environment
+# RAILS_ENV=development
+
+# hostname
+APPLICATION_HOST=localhost
+
+# application key, used for solr collection, fedora base bath, database etc.
+APPLICATION_KEY=hyrax
+
+# rails tmp location
+RAILS_TMP=/tmp
+
+# Geonames
+GEONAMES_USERNAME=hykuleaf
+
+# max threads, used for puma and sidekiq
+RAILS_MAX_THREADS=5
+
+# Emails and users
+CONTACT_EMAIL=
+
+# Disable Redis Cluster
+DISABLE_REDIS_CLUSTER=true
+
+# IIIF Endpoints
+# IIIF_SEARCH_ENDPOINT=IIIF_SEARCH_ENDPOINT_TODO
+# IIIF_IMAGE_ENDPOINT=https://APPLICATION_HOST_TODO/iipsrv/iipsrv.fcgi

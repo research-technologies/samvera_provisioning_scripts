@@ -42,8 +42,8 @@ $APPLICATION_KEY # eg. hyrax
 provision_user.sh
 
 ```
-$APPLICATION_USER # eg. hyrax
-$APPLICATION_KEY # eg. hyrax
+$APPLICATION_USER # eg. hyrax, used across multiple scripts
+$APPLICATION_KEY # eg. hyrax, used across multiple scripts
 ```
 
 puma.sh
@@ -73,5 +73,35 @@ rbenv.sh
 $RBENV_RUBY_VERSION
 $RBENV_RAILS_VERSION 
 $APPLICATION_USER # eg. hyrax
+```
+
+repo_builder.sh
+
+```
+$APPLICATION_KEY
+$APPLICATION_USER
+$GEM_SOURCE # eg. bitbucket.org:ulcc-art
+$GEM_KEY # gem name
+
+```
+
+setup.sh
+
+```
+$APPLICATION_NAME # display name, eg. CoSector Data Repository
+$APPLICATION_USER
+$APPLICATION_KEY 
+$APPLICATION_HOST # fdqn
+$GEM_KEY
+$RDS_PASSWORD
+$SMTP_PASSWORD
+$FEDORAPASS
+$SOLRPASS
+$FEDORAUSER
+$GEONAMES
+$CONTACT_EMAIL
+$FROM_EMAIL
+$IIIF_SEARCH_ENDPOINT # endpoint url, set to '' for no endpoint
+$CONFIG_IIIF_IMAGE_ENDPOINT # use NO to stick with default RIIIF endpoint
 ```
 

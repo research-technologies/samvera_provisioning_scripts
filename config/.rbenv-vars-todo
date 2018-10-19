@@ -1,0 +1,90 @@
+# environment
+RAILS_ENV=production
+
+# hostname
+APPLICATION_HOST=APPLICATION_HOST_TODO
+
+# application key, used for solr collection, fedora base bath, database etc.
+APPLICATION_KEY=APPLICATION_KEY_TODO
+
+# application user
+APPLICATION_USER=APPLICATION_USER_TODO
+
+# path to banner
+BANNER=banner.jpg
+
+# application name
+APPLICATION_NAME=APPLICATION_NAME_TODO
+
+# rails tmp location
+RAILS_TMP=/var/tmp
+
+# log location (local config will append application key)
+LOGS_PATH=/var/log
+
+# pids and state (local config will append application key)
+PIDS_PATH=/var/run
+
+# Full path to derivatives
+DERIVATIVES_PATH=/data/APPLICATION_KEY_TODO/derivatives
+
+# Full path to uploads TRAILING SLASH IS NEEDED IN HYKU
+UPLOADS_PATH=/data/APPLICATION_KEY_TODO/uploads/
+
+# Full path to working directory
+WORKING_PATH=/data/APPLICATION_KEY_TODO/working
+
+# Full path to uploads cache directory TRAILING SLASH IS NEEDED IN HYKU
+CACHE_PATH=/data/APPLICATION_KEY_TODO/uploads/cache/
+
+# Full path to riiif cache directory
+NETWORK_FILES=/data/APPLICATION_KEY_TODO/network_files
+
+# Analytics - IF COMMENTED AND EMPTY, SCRIPT WILL DEAL WITH THIS
+# OTHERWISE ADD THE CODE HERE
+# GOOGLE_ANALYTICS_ID=
+
+# Geonames
+GEONAMES_USERNAME=GEONAMES_TODO
+
+# Fedora
+FEDORA_URL=FEDORA_URL_TODO
+
+FEDORA_USER=FEDORA_USER_TODO
+FEDORA_PASSWORD=FEDORA_PASSWORD_TODO
+
+# Solr
+SOLR_BASE=SOLR_URL_TODO
+
+# Database
+RDS_DB_NAME=RDS_DB_NAME_TODO
+RDS_USERNAME=RDS_USERNAME_TODO
+RDS_PASSWORD=RDS_PASSWORD_TODO
+RDS_HOSTNAME=127.0.0.1
+RDS_PORT=5432
+
+# max threads, used for puma and sidekiq
+RAILS_MAX_THREADS=5
+
+# Keys
+SECRET_KEY_BASE=SECRET_KEY_BASE_TODO
+
+# Mail settings
+SMTP_EMAIL=FROM_EMAIL_TODO
+SMTP_PASSWORD=SMTP_PASSWORD_TODO
+
+# Emails and users
+CONTACT_EMAIL=CONTACT_EMAIL_TODO
+INVITE_EMAIL=FROM_EMAIL_TODO
+# BATCH_USER=
+# AUDIT_USER=
+
+# Disable Redis Cluster
+DISABLE_REDIS_CLUSTER=true
+
+# Serve static files
+RAILS_SERVE_STATIC_FILES=true
+
+# IIIF Endpoints
+# IIIF_SEARCH_ENDPOINT=IIIF_SEARCH_ENDPOINT_TODO
+# IIIF_IMAGE_ENDPOINT=https://APPLICATION_HOST_TODO/iipsrv/iipsrv.fcgi
