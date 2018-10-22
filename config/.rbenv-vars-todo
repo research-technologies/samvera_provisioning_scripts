@@ -88,3 +88,6 @@ RAILS_SERVE_STATIC_FILES=true
 # IIIF Endpoints
 # IIIF_SEARCH_ENDPOINT=IIIF_SEARCH_ENDPOINT_TODO
 # IIIF_IMAGE_ENDPOINT=https://APPLICATION_HOST_TODO/iipsrv/iipsrv.fcgi
+
+# SSL - uncomment to use ssl (the value has not meaning)
+# SSL_CONFIGURED=true

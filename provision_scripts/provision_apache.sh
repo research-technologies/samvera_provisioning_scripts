@@ -1,6 +1,7 @@
 #!/bin/bash
 
 FILENAME=$(echo $APPLICATION_KEY)
+SSL_ON=$(echo $SSL_ON)
 
 ##############################
 # Install Apache and mod_ssl #
@@ -15,10 +16,14 @@ systemctl enable httpd.service
 # echo "IncludeOptional sites-enabled/*.conf" >> /etc/httpd/conf/httpd.conf
 # fi
 
-######################################
-# Add the new configs and soft links #
-######################################
-cp /tmp/config/$FILENAME.conf /etc/httpd/conf.d/$FILENAME.conf
+#######################
+# Add the new configs #
+#######################
+if [ "$SSL_ON" == 1 ]; then
+  cp /tmp/config/"$FILENAME"_ssl.conf /etc/httpd/conf.d/$FILENAME.conf
+else
+  cp /tmp/config/$FILENAME.conf /etc/httpd/conf.d/$FILENAME.conf
+fi
 
 ###########
 # SELinux #

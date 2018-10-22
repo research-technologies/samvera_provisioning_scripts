@@ -25,3 +25,4 @@ export GEM_KEY=TODO
 export GEM_SOURCE=bitbucket.org:ulcc-art
 export IIIF_SEARCH_ENDPOINT=''
 export CONFIG_IIIF_IMAGE_ENDPOINT=NO
+export SSL_ON=false

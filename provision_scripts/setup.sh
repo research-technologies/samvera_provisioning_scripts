@@ -20,6 +20,7 @@ CONTACT_EMAIL=$(echo $CONTACT_EMAIL)
 FROM_EMAIL=$(echo $FROM_EMAIL)
 IIIF_SEARCH_ENDPOINT=$(echo $IIIF_SEARCH_ENDPOINT)
 CONFIG_IIIF_IMAGE_ENDPOINT=$(echo $CONFIG_IIIF_IMAGE_ENDPOINT)
+SSL_ON=$(echo $SSL_ON)
 
 if [ "$(whoami)" != $USER ]; then
   echo "Script must be run as user: $USER"
@@ -69,6 +70,10 @@ if [ "$IIIF_SEARCH_ENDPOINT" != "" ]; then
 fi
 if [ "$CONFIG_IIIF_IMAGE_ENDPOINT" != "NO" ]; then
   sed -i "s/# IIIF_IMAGE_ENDPOINT/IIIF_IMAGE_ENDPOINT/g" .rbenv-vars
+fi
+
+if [ "$SSL_ON" == 1 ]; then
+  sed -i "s/# SSL_CONFIGURED=/SSL_CONFIGURED=/g" .rbenv-vars
 fi
 
 rbenv vars
