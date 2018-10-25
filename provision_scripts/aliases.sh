@@ -6,8 +6,8 @@ APP_KEY=$(echo $APPLICATION_KEY)
 # Add to main user
 echo "alias hy='sudo -u $USER -i'" >> ~/.bash_profile
 echo "alias hyst='sudo systemctl start puma && sudo systemctl start sidekiq'" >> ~/.bash_profile
-echo "alias hystop='sudo systemctl start puma && sudo systemctl start sidekiq'" >> ~/.bash_profile
-echo "alias hyre='sudo systemctl start puma && sudo systemctl start sidekiq'" >> ~/.bash_profile
+echo "alias hystop='sudo systemctl stop puma && sudo systemctl stop sidekiq'" >> ~/.bash_profile
+echo "alias hyre='sudo systemctl restart puma && sudo systemctl restart sidekiq'" >> ~/.bash_profile
 echo "alias hytail='tail -f /var/log/$APP_KEY/"$APP_KEY"_production.log'" >> ~/.bash_profile
 source ~/.bash_profile
 
