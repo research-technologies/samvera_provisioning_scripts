@@ -40,6 +40,8 @@ CACHE_PATH=/data/APPLICATION_KEY_TODO/uploads/cache/
 # Full path to riiif cache directory
 NETWORK_FILES=/data/APPLICATION_KEY_TODO/network_files
 
+BRANDING_PATH=/data/APPLICATION_KEY_TODO/branding
+
 # Analytics - IF COMMENTED AND EMPTY, SCRIPT WILL DEAL WITH THIS
 # OTHERWISE ADD THE CODE HERE
 # GOOGLE_ANALYTICS_ID=
@@ -89,5 +91,6 @@ RAILS_SERVE_STATIC_FILES=true
 # IIIF_SEARCH_ENDPOINT=IIIF_SEARCH_ENDPOINT_TODO
 # IIIF_IMAGE_ENDPOINT=https://APPLICATION_HOST_TODO/iipsrv/iipsrv.fcgi
 
-# SSL - uncomment to use ssl (the value has not meaning)
+# SSL - uncomment to use ssl 
+#   the existence of this will switch on ssl, ie. false won't switch it off
 # SSL_CONFIGURED=true
