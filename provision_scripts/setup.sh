@@ -84,10 +84,9 @@ if ! grep -q "$APP_KEY" "/var/lib/$USER/Gemfile"; then
 fi
 
 bundle install --without development test
-# @todo update these in Hyku
-sed -i "s/gem 'iiif_manifest', '~> 0.3.0'/gem 'iiif_manifest', '~> 0.4.0'/g" Gemfile
-bundle update iiif_manifest --conservative
-bundle update devise --conservative
+# sed -i "s/gem 'iiif_manifest', '~> 0.3.0'/gem 'iiif_manifest', '~> 0.4.0'/g" Gemfile
+# bundle update iiif_manifest --conservative
+# bundle update devise --conservative
 
 # remove anything not in Gemfile
 bundle clean --force
