@@ -98,7 +98,7 @@ sed -i "s/SECRET_KEY_BASE_TODO/$KEY/g" .rbenv-vars
 # if it doesn't, run: 
 # rake db:create
 
-rails g $GEM_KEY:install --initial -f 
+rails g $GEM_KEY:install --initial 
 
 # add the qa index as per https://github.com/samvera/questioning_authority
 echo 'Add the index to the database'
