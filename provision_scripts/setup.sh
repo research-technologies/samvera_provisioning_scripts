@@ -30,7 +30,7 @@ fi
 # Make sure we our rbenv setup loaded
 source ~/.bash_profile
 
-cd /var/lib/$USER
+cd "/var/lib/$USER"
 
 wget https://raw.githubusercontent.com/research-technologies/samvera_provisioning_scripts/master/config/.rbenv-vars-todo -O .rbenv-vars
 
