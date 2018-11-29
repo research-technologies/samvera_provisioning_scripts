@@ -79,7 +79,7 @@ fi
 rbenv vars
 
 # Insert gems
-if ! grep -q "$APP_KEY" "/var/lib/$USER/Gemfile"; then
+if ! grep -q "$GEM_KEY" "/var/lib/$USER/Gemfile"; then
   echo -e "\ngem '"$GEM_KEY"', :path => 'vendor/"$GEM_KEY"'" >> /var/lib/$APP_KEY/Gemfile
 fi
 
