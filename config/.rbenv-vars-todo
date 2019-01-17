@@ -25,8 +25,8 @@ LOGS_PATH=/var/log
 # pids and state (local config will append application key)
 PIDS_PATH=/var/run
 
-# Full path to derivatives
-DERIVATIVES_PATH=/data/APPLICATION_KEY_TODO/derivatives
+# Full path to derivatives (symlink to /data/APPLICATION_KEY/derivatives)
+DERIVATIVES_PATH=public/derivatives
 
 # Full path to uploads TRAILING SLASH IS NEEDED IN HYKU
 UPLOADS_PATH=/data/APPLICATION_KEY_TODO/uploads/

@@ -45,6 +45,7 @@ if echo "$answer" | grep -iq "^y" ;then
 	sudo -u $USER mkdir -p /data/$APPLICATION_KEY/derivatives /data/$APPLICATION_KEY/uploads /data/$APPLICATION_KEY/imports /data/$APPLICATION_KEY/working /data/$APPLICATION_KEY/network_files
 	sudo -u $USER cd /var/lib
 	sudo -u $USER git clone $APP_URL --branch $BRANCH /var/lib/$APPLICATION_KEY
+	sudo ln -s /data/$APPLICATION_KEY/derivatives /var/lib/$APPLICATION_KEY/public/derivatives
 	sudo -u $USER git clone git@$GEM_SOURCE/$GEM_KEY.git /var/lib/$APPLICATION_KEY/vendor/$GEM_KEY
 	wget https://raw.githubusercontent.com/research-technologies/samvera_provisioning_scripts/master/provision_scripts/setup.sh
 	sudo chmod +x setup.sh
