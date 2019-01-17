@@ -83,6 +83,7 @@ if ! grep -q "$GEM_KEY" "/var/lib/$USER/Gemfile"; then
   echo -e "\ngem '"$GEM_KEY"', :path => 'vendor/"$GEM_KEY"'" >> /var/lib/$APP_KEY/Gemfile
 fi
 
+gem update --system
 bundle install --without development test
 # sed -i "s/gem 'iiif_manifest', '~> 0.3.0'/gem 'iiif_manifest', '~> 0.4.0'/g" Gemfile
 # bundle update iiif_manifest --conservative
