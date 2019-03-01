@@ -85,9 +85,6 @@ fi
 
 gem update --system
 bundle install --without development test
-# sed -i "s/gem 'iiif_manifest', '~> 0.3.0'/gem 'iiif_manifest', '~> 0.4.0'/g" Gemfile
-# bundle update iiif_manifest --conservative
-# bundle update devise --conservative
 
 # remove anything not in Gemfile
 bundle clean --force
